@@ -1,2 +1,6 @@
 # Algorithmic-Trading-Bot-Using-Python
-This project immitates a robot for trading Crypto Currencies....I'm looking forward to coming up with a Trading bot of higher accuracy than those present.
+This project immitates a robot for trading Crypto Currencies, forex....
+
+Under development @QUANTCONNECT using Lean Python Engine
+
+All contributions are welcome
