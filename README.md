@@ -1,4 +1,4 @@
-# Algorithmic-Trading-Bot-Using-Python
+### Algorithmic-Trading-Bot-Using-Python
 
 ### Introduction
 Trading online has become one of the moat popular investment in the current world 
