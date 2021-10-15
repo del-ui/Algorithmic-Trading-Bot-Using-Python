@@ -63,7 +63,7 @@ class GeekyBlueSeahorse(QCAlgorithm):
 
 ```
 
-2. **Import required Library**
+2. #### **Import required Library**
 In this case, we will only require one library i.e. *numpy*.
 
 Import at the top as follows;
@@ -75,7 +75,7 @@ import numpy as np
 
 ```
 
-3. **Initialize** required variables
+3. ### **Initialize** required variables
 
 Under the initialize method, we will initialize several parameters;
 - Initialize cash for the purpose of the backtest(we call it the strategy cash) which would be  used on a real account.
@@ -83,8 +83,10 @@ Under the initialize method, we will initialize several parameters;
 The code is as follows;
 
 ```python
-self.SetStartDate(2015, 3, 26)  # Set Start Date
-        self.SetEndDate(2021, 9, 25)
+        self.SetStartDate(2015, 3, 26)  # Set Start Date
+
+        self.SetEndDate(2021, 9, 25) # Set End Date
+
         self.SetCash(100000)  # Set Strategy Cash
 
 ```
@@ -121,3 +123,36 @@ The first variable determines *how close our stop loss will be to the security p
 The second variable indicates how close our trading stop will follow the assets' price.
 This means that it will trail the price for 10% which is quite big but it gives more room for price flexibility.
 
+4. #### Define a Method to Plot the Data
+
+We will define the onData method to create a plot of the price of the securities.
+
+This gives a benchmark to compare our algorithm performance.
+
+```python
+def OnData(self, data):
+
+        self.Plot("Data Chart", self.symbol, self.Securities[self.symbol].Close)
+
+
+```
+This will also determine the closing price.
+
+5. #### **Create the Trading method**
+
+The next step will be to create the method that will do all the trading for us which will be called after every market open.
+
+We will call it **EveryMarketOpen** for simplicity.
+
+```python
+def EveryMarketOpen(self):
+
+```
+
+For this, we will have to initialize one more function in the initialize method.
+This the Schedule.On function which takes three parameters
+- The first specifies on which day the method is called.
+
+- The second specifies at which time the method is called
+
+- The last specifies which method is called, in this case it's EveryMarketOpen method.
