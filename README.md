@@ -48,7 +48,7 @@ its own editor.
 
 With your prerequisites and requirements ready, you can now code along for
 a practical understanding.
-Go to https//: www.quantconnect.com and sign up to setup your coding environment. 
+Go to www.quantconnect.com and sign up to setup your coding environment. 
 You can also use an offline editor and upload the code later for testing.
 
 
