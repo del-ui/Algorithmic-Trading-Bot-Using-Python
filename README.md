@@ -377,7 +377,7 @@ This is the one **Main** reason;
 
 Sometimes, there occur linkages between financial markets.
 As a result, algorithms operating under those markets transmit rapid shocks from one market to another thus triggering a systematic risk.
-These systematic risks bring about **huge losses**, which is consider a great risk.
+These systematic risks bring about **huge losses**, which is considered a great risk.
 
 Due to such risk, people prefer to trade on their own rather than depending on the software.
 
